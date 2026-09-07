@@ -70,7 +70,7 @@ The workflow is stored at `.github/workflows/lab7-container-security.yml`. It ru
 
 ### Workflow run
 
-- Direct link to a green workflow run: to be added after the GitHub Actions run completes.
+- Direct link to a green workflow run: https://github.com/rcs-tringuyen/devsecops-lab-submissions/actions/runs/34137629447
 - The workflow uploads `lab7-trivy-image-report`, `lab7-trivy-config-report`, and `lab7-conftest-report` artifacts.
 
 ### Triggers
@@ -92,4 +92,3 @@ The job installs Conftest 0.68.0 and evaluates the Deployment against the local 
 ### Reflection
 
 The CI workflow repeats the important local checks from Labs 7.1 and 7.2 on every proposed change, while Conftest prevents the hardening requirements from being removed accidentally. Local scans are still useful for faster feedback while editing manifests and for debugging a live kind deployment before opening a pull request.
-
